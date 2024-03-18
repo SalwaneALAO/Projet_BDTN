@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API_Sales.Modèle; // Assurez-vous que le namespace correspond à vos modèles
 using API_Sales.Data; // Assurez-vous que le namespace correspond à votre contexte de données
-
+// controller console
 namespace API_Sales.Controllers
 {
     [Route("api/[controller]")]

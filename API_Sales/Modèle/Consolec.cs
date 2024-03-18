@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+//classe console
 namespace API_Sales.Modèle
 {
     public class Consolec

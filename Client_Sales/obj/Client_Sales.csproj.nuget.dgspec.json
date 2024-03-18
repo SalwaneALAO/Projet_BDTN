@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46426002\\Downloads\\API_Sales - Copie\\API_Sales - Copie\\Client_Sales\\Client_Sales.csproj": {}
+    "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\Client_Sales\\Client_Sales.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46426002\\Downloads\\API_Sales - Copie\\API_Sales - Copie\\Client_Sales\\Client_Sales.csproj": {
+    "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\Client_Sales\\Client_Sales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46426002\\Downloads\\API_Sales - Copie\\API_Sales - Copie\\Client_Sales\\Client_Sales.csproj",
+        "projectUniqueName": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\Client_Sales\\Client_Sales.csproj",
         "projectName": "Client_Sales",
-        "projectPath": "C:\\Users\\46426002\\Downloads\\API_Sales - Copie\\API_Sales - Copie\\Client_Sales\\Client_Sales.csproj",
-        "packagesPath": "C:\\Users\\46426002\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46426002\\Downloads\\API_Sales - Copie\\API_Sales - Copie\\Client_Sales\\obj\\",
+        "projectPath": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\Client_Sales\\Client_Sales.csproj",
+        "packagesPath": "C:\\Users\\33604\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\Client_Sales\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\46426002\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\33604\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -86,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.320\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
