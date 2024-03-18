@@ -1,0 +1,37 @@
+﻿@page
+@model Client_Sales.Pages.Sales.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Sale</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.Year)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.Year)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.UnitsSold)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.UnitsSold)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sale.ConsoleId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sale.ConsoleId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Sale?.SaleId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

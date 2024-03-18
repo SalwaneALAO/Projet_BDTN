@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - API_Sales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            padding-top: 5rem;
+            background-color: #f8f9fa; /* Very light gray */
+            color: #212529; /* Dark gray */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fd7e14 !important; /* Warm orange color */
+        }
+
+        .nav-link {
+            color: #495057 !important; /* Dark gray */
+            transition: color 0.3s ease-in-out;
+        }
+
+            .nav-link:hover {
+                color: #fd7e14 !important; /* Warm orange hover effect */
+            }
+
+        footer {
+            margin-top: 2rem;
+            padding: 2rem 0;
+            background-color: #343a40; /* Dark footer background */
+            color: #ffffff; /* White text */
+        }
+
+        .btn-custom {
+            background-color: #20c997; /* Teal color */
+            border-color: #20c997;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .btn-custom:hover {
+                background-color: #1cb088; /* Darker teal */
+                transform: translateY(-2px); /* Button lift effect */
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); /* Soft shadow */
+            }
+
+        .main-container {
+            background-color: #ffffff; /* White background for content */
+            padding: 2rem;
+            border-radius: 0.5rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">API_Sales</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Consoles/Index">Consoles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Manufacturers/Index">Manufacturers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Sales/Index">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Privacy">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="main-container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            &copy; 2024 - API_Sales - <a href="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿@page
+@model Client_Sales.Pages.Consoles.CreateModel
+
+@{
+    ViewData["Title"] = "Create Console";
+}
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+        border-color: #0062cc;
+        box-shadow: 0 0 0 0.2rem rgba(0, 98, 204, 0.25);
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+
+    .btn-info {
+        color: #fff;
+    }
+
+    .btn-info:hover {
+        color: #fff;
+        background-color: #117a8b;
+        border-color: #10707f;
+    }
+</style>
+
+
+<h1>Launch your New Console!</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post" id="console-form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Consolec.Name" class="control-label">Console Name</label>
+                <input asp-for="Consolec.Name" class="form-control" placeholder="Enter console name" />
+                <span asp-validation-for="Consolec.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolec.ReleaseYear" class="control-label">Release Year</label>
+                <input asp-for="Consolec.ReleaseYear" type="number" min="1970" max="2024" class="form-control" placeholder="Enter release year" />
+                <span asp-validation-for="Consolec.ReleaseYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolec.ManufacturerId" class="control-label">Manufacturer ID</label>
+                <input asp-for="Consolec.ManufacturerId" class="form-control" placeholder="Enter manufacturer ID" />
+                <span asp-validation-for="Consolec.ManufacturerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Launch!</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index" class="btn btn-info">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Votre JavaScript pour les validations ou effets supplémentaires ici
+    </script>
+}
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #121212; /* Fond sombre */
+        color: #c0c0c0; /* Texte clair pour contraster avec le fond */
+    }
+
+
+    h1 {
+        color: #33ffec; /* Néon cyan */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .form-group label {
+        color: #ffff; /* Blanc pour les labels */
+    }
+
+    .form-control {
+        background-color: #222; /* Fond des champs sombre */
+        border: 1px solid #333;
+        color: #ddd; /* Texte clair dans les champs */
+    }
+
+    .form-control:focus {
+        border-color: #33ffec; /* Bordure néon lorsque le champ est sélectionné */
+        outline: none; /* Suppression de l'outline par défaut */
+    }
+
+    .btn-success {
+        background-color: #0f0; /* Vert pour le bouton */
+        border: none;
+    }
+
+    .btn-success:hover {
+        background-color: #0c0; /* Une teinte de vert plus foncée au survol */
+    }
+
+    .btn-info {
+        color: #fff;
+        background-color: #0056b3; /* Bleu pour le lien "Retour à la liste" */
+    }
+
+    .btn-info:hover {
+        background-color: #004088; /* Bleu plus foncé au survol */
+    }
+
+    .text-danger {
+        color: #ff3860; /* Rouge pour les messages d'erreur */
+    }
+
+    /* Ajout d'un peu de style pour les inputs */
+    input[type="text"], input[type="number"] {
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px; /* Bordures arrondies */
+    }
+
+    /* Styles supplémentaires pour le bouton de soumission */
+    button[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease; /* Animation au survol */
+        border: none; /* Suppression de la bordure */
+        cursor: pointer; /* Curseur main pour indiquer l'action */
+        box-shadow: 0 0 15px #33ffec; /* Ombre portée pour l'effet néon */
+    }
+    </style>
