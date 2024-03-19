@@ -11590,23 +11590,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\33604\\.nuget\\packages\\": {},
+    "C:\\Users\\salwa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\API_Sales\\API_Sales.csproj",
+      "projectUniqueName": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\API_Sales.csproj",
       "projectName": "API_Sales",
-      "projectPath": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\API_Sales\\API_Sales.csproj",
-      "packagesPath": "C:\\Users\\33604\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33604\\OneDrive - ESIGELEC\\Bureau\\BDTN\\CLOUD AZURE\\Nouveau dossier\\API_Sales\\obj\\",
+      "projectPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\API_Sales.csproj",
+      "packagesPath": "C:\\Users\\salwa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\33604\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\salwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11615,7 +11615,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

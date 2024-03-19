@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Sales.Modèle
 {
+    //Sales Classieybhihu"'
     public class Sale
     {
         [Key]

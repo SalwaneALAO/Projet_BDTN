@@ -8,6 +8,7 @@ using API_Sales.Modèle;
 
 namespace API_Sales.Controllers
 {
+    //Sales Controlleruhyezihue
     [Route("api/[controller]")]
     [ApiController]
     public class SalesController : ControllerBase
