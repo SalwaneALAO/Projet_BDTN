@@ -13,42 +13,65 @@
     white-space: nowrap;
     overflow: hidden;
     /*border-right: .15em solid orange; /* Curseur de la machine à écrire */
-     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+     animation: typing 1s steps(10, end), blink-caret .50s step-end infinite;
      word-spacing: 8px;
 }
 
+ 
+
 .video-text {
     position: absolute;
-    bottom: 190px; /* Ajustez selon le besoin */
-    left: 500px; /* Ajustez selon le besoin */
+    bottom: 150px; /* Ajustez selon le besoin */
+    left: 50%; /* Ajustez selon le besoin */
+    transform: translateX(-50%);
     color: white;
-    font-size: 24px;
+    font-size: 2vw;
    
 }
 </style>
+
+ 
 
  <video autoplay loop muted playsinline id="myVideo">
 <source src="./videogame.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 
+ 
+
+<div id="videoText" class="video-text"></div>
+
+ 
+
 <script>
-    document.getElementById('myVideo').addEventListener('play', function() {
-    var text = "Bienvenue sur API_Sales le site par excellence de consultation de vos ventes de jeux vidéos"; // Le texte à animer
-    var index = 0; // Position de départ dans la chaîne de caractères
-    var videoText = document.getElementById('videoText');
-    videoText.innerText = " "; // S'assurer que le conteneur est vide
+    document.getElementById('myVideo').addEventListener('play', function () {
+        var text = "Bienvenue sur API_Sales, le site par excellence de consultation de vos ventes de jeux vidéos"; // Le texte à animer
+        var words = text.split(" "); // Séparer le texte en mots
 
-    function typeWriter() {
-        if (index < text.length) {
-            videoText.innerText += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 150); // Ajustez la vitesse de frappe ici
+ 
+
+        var videoText = document.getElementById('videoText');
+        videoText.innerHTML = ""; // S'assurer que le conteneur est vide
+
+ 
+
+        function typeWriter(index) {
+            if (index < words.length) {
+                videoText.innerHTML += "<span>" + words[index] + "</span> "; // Ajouter chaque mot dans un span
+                setTimeout(function () {
+                    typeWriter(index + 1); // Passer au mot suivant
+                }, 150); // Ajustez la vitesse de frappe ici
+            }
         }
-    }
 
-    typeWriter(); // Démarrer l'animation
+ 
+
+        typeWriter(0); // Démarrer l'animation avec le premier mot
+
+ 
 
 });
+
+ 
 
 </script>
