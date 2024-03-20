@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj": {}
+    "C:\\Users\\46426002\\Source\\Repos\\BDTN\\API_Sales\\API_Sales.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj": {
+    "C:\\Users\\46426002\\Source\\Repos\\BDTN\\API_Sales\\API_Sales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj",
+        "projectUniqueName": "C:\\Users\\46426002\\Source\\Repos\\BDTN\\API_Sales\\API_Sales.csproj",
         "projectName": "API_Sales",
-        "projectPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj",
-        "packagesPath": "C:\\Users\\angeg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\obj\\",
+        "projectPath": "C:\\Users\\46426002\\Source\\Repos\\BDTN\\API_Sales\\API_Sales.csproj",
+        "packagesPath": "C:\\Users\\46426002\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\46426002\\Source\\Repos\\BDTN\\API_Sales\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\angeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\46426002\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,8 +78,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -95,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.321\\RuntimeIdentifierGraph.json"
         }
       }
     }

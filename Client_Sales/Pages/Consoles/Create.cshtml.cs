@@ -20,18 +20,23 @@ namespace Client_Sales.Pages.Consoles
         {
             var consoles = await _salesClient.ConsolecsAllAsync();
             ViewData["ConsoleId"] = new SelectList(consoles, "ConsoleId", "Name");
+
+            // Supposons que vous avez un moyen d'obtenir la liste des fabricants ici
+            var manufacturers = await _salesClient.ManufacturersAllAsync(); // Assurez-vous que cette méthode existe et fonctionne comme prévu
+            LoadManufacturers(manufacturers);
+
             return Page();
         }
 
         [BindProperty]
         public Consolec Consolec { get; set; } = default!;
-        
         public SelectList Manufacturers { get; set; } // Assurez-vous que cette propriété existe.
 
         // Supposons que Manufacturer est une classe contenant 'Id' et 'Name'
         public void LoadManufacturers(IEnumerable<Manufacturer> manufacturers)
         {
-            Manufacturers = new SelectList(manufacturers, "Id", "Name");
+            Manufacturers = new SelectList(manufacturers.Select(m =>
+                new { Id = m.ManufacturerId, Name = $"{m.ManufacturerId} - {m.Name}" }), "Id", "Name");
         }
 
         public async Task<IActionResult> OnPostAsync()
