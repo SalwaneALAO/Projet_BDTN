@@ -3,8 +3,52 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<style>
+.video-text {
+    position: absolute;
+    bottom: 20px; /* Ajustez selon le besoin */
+    left: 20px; /* Ajustez selon le besoin */
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: .15em solid orange; /* Curseur de la machine à écrire */
+     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+     word-spacing: 8px;
+}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+.video-text {
+    position: absolute;
+    bottom: 190px; /* Ajustez selon le besoin */
+    left: 500px; /* Ajustez selon le besoin */
+    color: white;
+    font-size: 24px;
+   
+}
+</style>
+
+ <video autoplay loop muted playsinline id="myVideo">
+<source src="./videogame.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+</video>
+
+<script>
+    document.getElementById('myVideo').addEventListener('play', function() {
+    var text = "Bienvenue sur API_Sales le site par excellence de consultation de vos ventes de jeux vidéos"; // Le texte à animer
+    var index = 0; // Position de départ dans la chaîne de caractères
+    var videoText = document.getElementById('videoText');
+    videoText.innerText = " "; // S'assurer que le conteneur est vide
+
+    function typeWriter() {
+        if (index < text.length) {
+            videoText.innerText += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 150); // Ajustez la vitesse de frappe ici
+        }
+    }
+
+    typeWriter(); // Démarrer l'animation
+
+});
+
+</script>
