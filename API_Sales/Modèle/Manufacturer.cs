@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace API_Sales.Modèle
 {
+    // Class manufacturer
     public class Manufacturer
     {
         [Key]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Client_Sales\\Client_Sales.csproj": {}
+    "C:\\Users\\angeg\\source\\repos\\API_Sales\\Client_Sales\\Client_Sales.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Client_Sales\\Client_Sales.csproj": {
+    "C:\\Users\\angeg\\source\\repos\\API_Sales\\Client_Sales\\Client_Sales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Client_Sales\\Client_Sales.csproj",
+        "projectUniqueName": "C:\\Users\\angeg\\source\\repos\\API_Sales\\Client_Sales\\Client_Sales.csproj",
         "projectName": "Client_Sales",
-        "projectPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Client_Sales\\Client_Sales.csproj",
-        "packagesPath": "C:\\Users\\salwa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Client_Sales\\obj\\",
+        "projectPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\Client_Sales\\Client_Sales.csproj",
+        "packagesPath": "C:\\Users\\angeg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\Client_Sales\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\angeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

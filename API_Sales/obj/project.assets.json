@@ -11590,23 +11590,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\salwa\\.nuget\\packages\\": {},
+    "C:\\Users\\angeg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\API_Sales.csproj",
+      "projectUniqueName": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj",
       "projectName": "API_Sales",
-      "projectPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\API_Sales.csproj",
-      "packagesPath": "C:\\Users\\salwa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salwa\\source\\repos\\Projet_BDTN\\Projet_BDTN\\API_Sales\\obj\\",
+      "projectPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\API_Sales.csproj",
+      "packagesPath": "C:\\Users\\angeg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\angeg\\source\\repos\\API_Sales\\API_Sales\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\salwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\angeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11684,7 +11684,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API_Sales.Data;
 using API_Sales.Modèle;
-
+//Controller Manufacturer
 namespace API_Sales.Controllers
 {
     [Route("api/[controller]")]
