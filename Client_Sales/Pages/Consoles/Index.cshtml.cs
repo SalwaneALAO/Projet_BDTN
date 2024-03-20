@@ -26,6 +26,8 @@ namespace Client_Sales.Pages.Consoles
             Consolec = consoles.ToList(); // Convert ICollection to IList
             
         }
+
+
     }
 }
 

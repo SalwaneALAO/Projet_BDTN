@@ -1,44 +1,115 @@
 ﻿@page
 @model Client_Sales.Pages.Sales.CreateModel
-
+ 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Sales";
 }
 
-<h1>Create</h1>
-
-<h4>Sale</h4>
+ 
+<h1>New Sale ?</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Sale.Year" class="control-label"></label>
-                <input asp-for="Sale.Year" class="form-control" />
-                <span asp-validation-for="Sale.Year" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sale.UnitsSold" class="control-label"></label>
-                <input asp-for="Sale.UnitsSold" class="form-control" />
-                <span asp-validation-for="Sale.UnitsSold" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sale.ConsoleId" class="control-label"></label>
-                <input asp-for="Sale.ConsoleId" class="form-control" />
-                <span asp-validation-for="Sale.ConsoleId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="col-md-4">
+<form method="post">
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+<label asp-for="Sale.Year" class="control-label"> Year</label>
+<input asp-for="Sale.Year" class="form-control" />
+<span asp-validation-for="Sale.Year" class="text-danger"></span>
 </div>
-
+<div class="form-group">
+<label asp-for="Sale.UnitsSold" class="control-label"> Unit Sold</label>
+<input asp-for="Sale.UnitsSold" class="form-control" />
+<span asp-validation-for="Sale.UnitsSold" class="text-danger"></span>
+</div>
+<div class="form-group">
+<label asp-for="Sale.ConsoleId" class="control-label">Console ID </label>
+<input asp-for="Sale.ConsoleId" asp-items="Model.Consoles"  class="form-control" />
+<span asp-validation-for="Sale.ConsoleId" class="text-danger"></span>
+</div>
+ 
+            <div class="form-group">
+<input type="submit" value="Create" class="btn btn-primary" />
+</div>
+</form>
+</div>
+</div>
+ 
 <div>
-    <a asp-page="Index">Back to List</a>
+<a asp-page="Index" class="btn btn-info">Back to List</a>
 </div>
-
+ 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+ 
+ 
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #121212; /* Fond sombre */
+        color: #c0c0c0; /* Texte clair pour contraster avec le fond */
+    }
+ 
+ 
+    h1 {
+        color: white; /* Néon cyan */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+ 
+    .form-group label {
+        color: #ffff; /* Blanc pour les labels */
+    }
+ 
+    .form-control {
+        background-color: #222; /* Fond des champs sombre */
+        border: 1px solid #333;
+        color: #ddd; /* Texte clair dans les champs */
+    }
+ 
+        .form-control:focus {
+            border-color: #33ffec; /* Bordure néon lorsque le champ est sélectionné */
+            outline: none; /* Suppression de l'outline par défaut */
+        }
+ 
+    .btn-success {
+        background-color: #0056b3; /* Vert pour le bouton */
+        border: none;
+    }
+ 
+        .btn-success:hover {
+            background-color: #004088; /* Une teinte de vert plus foncée au survol */
+        }
+ 
+    .btn-info {
+        color: #fff;
+        background-color: red; /* Bleu pour le lien "Retour à la liste" */
+    }
+ 
+        .btn-info:hover {
+            background-color: red; /* Bleu plus foncé au survol */
+        }
+ 
+    .text-danger {
+        color: #ff3860; /* Rouge pour les messages d'erreur */
+    }
+ 
+    /* Ajout d'un peu de style pour les inputs */
+    input[type="text"], input[type="number"] {
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px; /* Bordures arrondies */
+    }
+ 
+    /* Styles supplémentaires pour le bouton de soumission */
+    button[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease; /* Animation au survol */
+        border: none; /* Suppression de la bordure */
+        cursor: pointer; /* Curseur main pour indiquer l'action */
+        box-shadow: 0 0 15px #33ffec; /* Ombre portée pour l'effet néon */
+    }
+</style>
