@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using API_Sales.Data;
-using API_Sales.Modèle;
+using API_Sales.Data;// Assurez-vous que le namespace correspond à votre contexte de données
+using API_Sales.Modèle;// Assurez-vous que le namespace correspond à vos modèles
 //Controller Manufacturer
 namespace API_Sales.Controllers
 {
