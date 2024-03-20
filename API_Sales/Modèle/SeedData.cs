@@ -4,7 +4,7 @@ using API_Sales.Modèle; // Assurez-vous que ce namespace correspond à celui de
 using System;
 using System.Linq;
 using API_Sales.Data;
-
+//SeedData
 namespace API_Sales.Modèle
 {
     public static class SeedData
