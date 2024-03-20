@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Client_Sales.API; // Ensure your API client namespace is correctly referenced
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Client_Sales.API; // Assurez-vous que l'espace de noms de votre client API est correctement référencé.
 
 namespace Client_Sales.Pages.Sales
 {
@@ -14,41 +15,47 @@ namespace Client_Sales.Pages.Sales
             _salesClient = salesClient;
         }
 
-        public IActionResult OnGet()
+        // La propriété pour SelectList des consoles avec ID et Nom.
+        public SelectList ConsoleList { get; set; }
+
+        [BindProperty]
+        public Sale Sale { get; set; } = new Sale(); // Modèle de vente initialisé.
+
+        public async Task<IActionResult> OnGetAsync()
         {
+            var consoles = await _salesClient.ConsolecsAllAsync();
+
+            // Créez une liste qui combine l'ID et le nom pour chaque console.
+            ConsoleList = new SelectList(consoles.Select(c =>
+                new { Id = c.ConsoleId, Name = $"{c.ConsoleId} - {c.Name}" }), "Id", "Name");
+
             return Page();
         }
 
-        [BindProperty]
-        public Sale Sale { get; set; } = default!;
-
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+            if (!ModelState.IsValid)
+            {
+                var consoles = await _salesClient.ConsolecsAllAsync();
+                ConsoleList = new SelectList(consoles.Select(c =>
+                    new { Id = c.ConsoleId, Name = $"{c.ConsoleId} - {c.Name}" }), "ConsoleId", "Name");
+                return Page();
+            }
+
             try
             {
                 var createdSale = await _salesClient.SalesPOSTAsync(Sale);
-                // You can use createdSale if you need the result of the POST operation
-                // Redirect to a new page or indicate success as needed
                 return RedirectToPage("./Index");
             }
             catch (ApiException ex) when (ex.StatusCode == 201)
             {
-                // If the status code is 201, interpret it as success and handle accordingly
-                // Possibly log the response or inform the user of success
-                return RedirectToPage("./Index"); // Or wherever you need to redirect to
+                return RedirectToPage("./Index");
             }
             catch (ApiException ex)
             {
-                // Handle other unexpected status codes
                 ModelState.AddModelError(string.Empty, $"An error occurred while creating the sale: {ex.Message}");
                 return Page();
             }
-
-            // Use the API client to add a new sale
-            await _salesClient.SalesPOSTAsync(Sale);
-
-            return RedirectToPage("./Index");
         }
     }
 }
