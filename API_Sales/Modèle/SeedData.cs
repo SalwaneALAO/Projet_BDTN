@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using API_Sales.Modèle; // Assurez-vous que ce namespace correspond à celui de vos modèles et de votre contexte de base de données.
-using System;
+using API_Sales.Modèle;
 using System.Linq;
 using API_Sales.Data;
 //SeedData
