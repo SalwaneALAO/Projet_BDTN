@@ -17,22 +17,22 @@
         <form method="post" id="console-form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Sale.Year" class="control-label">Console Name</label>
-                <input asp-for="Sale.Year" class="form-control" placeholder="Entrer année de vente" />
+                <label asp-for="Sale.Year" class="control-label">Year</label>
+                <input asp-for="Sale.Year" type="number" min="1970" max="2024" class="form-control" placeholder="Enter year of sale" />
                 <span asp-validation-for="Sale.Year" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Sale.UnitsSold" class="control-label">Units_Sold</label>
-                <input asp-for="Sale.UnitsSold" type="number" min="1970" max="2024" class="form-control" placeholder="Entrer quantité" />
+                <input asp-for="Sale.UnitsSold" type="number" min="0" max="2500" class="form-control" placeholder="Enter quantity" />
                 <span asp-validation-for="Sale.UnitsSold" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Sale.ConsoleId" class="control-label">Manufacturer ID</label>
+                <label asp-for="Sale.ConsoleId" class="control-label">Console ID</label>
                 <select asp-for="Sale.ConsoleId" asp-items="Model.ConsoleList" class="form-control"></select>
                 <span asp-validation-for="Sale.ConsoleId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-success">Launch!</button>
+                <button type="submit" class="btn btn-success">Create!</button>
             </div>
         </form>
     </div>
