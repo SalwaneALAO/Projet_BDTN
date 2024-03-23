@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Client_Sales.API; // Ensure your API client namespace is correctly referenced
-
+//delete
 namespace Client_Sales.Pages.Sales
 {
     public class DeleteModel : PageModel

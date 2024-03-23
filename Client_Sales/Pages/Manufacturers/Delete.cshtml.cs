@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Client_Sales.API;
-
+//delete
 namespace Client_Sales.Pages.Manufacturers
 {
     public class DeleteModel : PageModel
