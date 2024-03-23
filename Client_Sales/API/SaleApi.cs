@@ -160,7 +160,8 @@ namespace Client_Sales.API
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.18.2.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SalesClient : ISalesClient
     {
-        private string _baseUrl = "http://localhost:5195";
+        //private string _baseUrl = "http://localhost:5195";
+        private string _baseUrl = "https://apisales20240322171004.azurewebsites.net";
         private System.Net.Http.HttpClient _httpClient;
         private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
 
